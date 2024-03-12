@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 // import { useState } from 'react';
+import React, { Component } from 'react';
 
 function App() {
   const name = "code";
@@ -56,12 +57,13 @@ function App() {
 
 // export default App;
 
-function Animall() {
-  const animalName = "커크";
-  const animalType = "사모예드"
-  const sytles = {
-    textDecoration: "underline",
-  }
+class MyAnimall extends Component {
+  render(){
+    const animalName = "커크";
+    const animalType = "사모예드"
+    const sytles = {
+      textDecoration: "underline",
+    }
   return(
     <div className='MyAnimall'>
       <p>제 반려 동물의 이름은 <span style={sytles}>{animalName}</span>입니다.</p>
@@ -69,23 +71,10 @@ function Animall() {
     </div>
   )
 }
-
-// export class MyAnimall{};
-
-function ABCompare(){
-  const a = 10;
-  const b = 4;
-  return (
-    <div className='IsTrue'>
-      <p >{ a > b && "a가 b보다 더 큽니다."}</p>
-    </div>
-  )
 }
 
-// export default ABCompare;
-
 function Login(){
-  const title = "Hello World"
+  const title = "Welcom to React World"
   return(
     <div className='Login'>
       <h1>{title}</h1>
@@ -93,9 +82,34 @@ function Login(){
       <p>비밀번호: <input type='password' className='pw'></input></p>
     </div>
   )
-}
+} 
 
-export default Login;
+export {MyAnimall, Login};
+
+// function ABCompare(){
+//   const a = 10;
+//   const b = 4;
+//   return (
+//     <div className='IsTrue'>
+//       <p >{ a > b && "a가 b보다 더 큽니다."}</p>
+//     </div>
+//   )
+// }
+
+// export default ABCompare;
+
+// function Login(){
+//   const title = "Hello World"
+//   return(
+//     <div className='Login'>
+//       <h1>{title}</h1>
+//       <p>아이디: <input type='text' className='id'></input></p>
+//       <p>비밀번호: <input type='password' className='pw'></input></p>
+//     </div>
+//   )
+// }
+
+// export default Login;
 
 
 
