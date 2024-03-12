@@ -1,5 +1,5 @@
 import './Larva.css';
-import grass from './src_img/grass.png';
+// import grass from './src_img/grass.png';
 
 function Larva(){
     return (
@@ -10,8 +10,11 @@ function Larva(){
             <div class="item i-10"></div>
             <div class="eye e-3"></div>
             <div class="eye e-4"></div>
-            <img class ="grass" src="../public/publig_img/grass.png" />
-            <img class="grass" src={grass} alt="grass" />
+            <div class="grass"></div>
+            {/* <img class ="grass" src={process.env.PUBLIC_URL + '/public_img/grass.png'} /> */}
+            {/* <img className ="grass" src={require('./src_img/grass.png').default} /> */}
+            {/* <img class="grass" src={grass} alt="grass" /> */}
+            <img class="grass" style={{backgroundImage: 'url(/public_img/grass.png)'}} alt="grass" />
         </div>
     )
 

@@ -61,3 +61,14 @@ img {
   left: 20px;
   width: 350px;
 }
+
+/* .grass{
+      position:absolute;
+      // 절대 경로 기준은 src
+      background-image: url(../public/public_img/grass.png);
+      width: 350px;
+      height: 100px;
+      top: 100px;
+      left: 50px;
+      border-radius: 30%;
+} */
