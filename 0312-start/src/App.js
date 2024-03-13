@@ -66,7 +66,7 @@ class MyAnimall extends Component {
     }
   return(
     <div className='MyAnimall'>
-      <p>제 반려 동물의 이름은 <span style={sytles}>{animalName}</span>입니다.</p>
+      <p>반려 동물의 이름은 <span style={sytles}>{animalName}</span>입니다.</p>
       <p><span style={sytles}>{animalName}</span>은 <span style={sytles}>{animalType}</span>입니다.</p>
     </div>
   )
@@ -92,7 +92,6 @@ export {MyAnimall, Login};
 //   return (
 //     <div className='IsTrue'>
 //       <p >{ a > b && "a가 b보다 더 큽니다."}</p>
-//     </div>
 //   )
 // }
 

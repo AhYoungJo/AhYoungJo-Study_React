@@ -8,7 +8,7 @@ import Img2 from './src_img/sunglasses-2705642_640.jpg'
 import Img3 from './src_img/woman-1845577_640.jpg'
 import Img4 from './src_img/woman-1853939_640.jpg'
 import Img5 from './src_img/woman-7009979_640.jpg'
-import Button from './Button';
+// import Button from './Button';
 
 // import FunctionComponent from './FunctionComponent';
 
