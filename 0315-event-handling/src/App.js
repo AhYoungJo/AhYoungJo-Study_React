@@ -8,6 +8,7 @@ import HandlerColor from './components/ex/HandlerColor';
 import HandlerPop from './components/ex/HandlerBlock'
 import HandlerBlock from './components/ex/HandlerBlock';
 import HandlerInput from './components/ex/HandlerInput';
+import ExAll from './components/ex/ExAll';
 
 function App() {
   return (
@@ -15,10 +16,12 @@ function App() {
     {/* <SyntheticEvent/>
     <ClassBind/>
     <Counter/> */}
-    < HandlerEx />
+    {/* < HandlerEx />
     < HandlerColor />
     < HandlerBlock />
-    < HandlerInput />
+    < HandlerInput /> */}
+    <ExAll />
+
     </div>
   );
 }

@@ -1,0 +1,48 @@
+.ExAll{
+    /* width: 100vw; */
+    font-size: 18px;
+    text-align: left;
+}
+
+.SelectBox {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin: 30px;
+}
+
+
+.Input span{
+    margin-right: 2.3vw;
+}
+
+.FruitSelect{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+
+.BgSelect{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+
+.FontSelect{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.FruitSelect select,
+.BgSelect select,
+.FontSelect select{
+    height: 25px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    color: blue;
+}
