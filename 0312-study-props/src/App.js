@@ -13,10 +13,9 @@ import Img5 from './src_img/woman-7009979_640.jpg'
 // import FunctionComponent from './FunctionComponent';
 
 function App() {
-  const name = "코딩온"
   return (
     <div className="App">
-      <Header text1="로그인" text2="회원가입"/>
+      <Header />
       <Wrapper>
       <Content title="AshBrown" imgURL={Img1}/>      
       <Content title="Blue" imgURL={Img2}/>      

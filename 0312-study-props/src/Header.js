@@ -1,5 +1,6 @@
 // import Reat, {Component} from 'react';
-import PropsTypes from 'prop-types';
+import React from 'react';
+import propTypes from 'prop-types';
 import './Header.css'
 import logo from './logo.svg'
 
@@ -27,7 +28,12 @@ export default function Header({text1, text2}){
     )
 }
 
-Header.props = {
-    text1: PropsTypes.string,
-    text2: PropsTypes.string
+Header.defaultProps = {
+    text1: "로그인",
+    text2: "회원가입"
+}
+
+Header.propTypes = {
+    text1: propTypes.string.isRequired,
+    text2: propTypes.string.isRequired,
 }
