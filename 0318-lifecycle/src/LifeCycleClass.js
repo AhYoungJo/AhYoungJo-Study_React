@@ -15,7 +15,7 @@ export default class LifeCycleClass extends Component {
         return(
             <>
             <button onClick={this.changeNumberState}>PLUS</button>
-            <button onClic={this.changeVisibleState}>ON/OFF</button>
+            <button onClick={this.changeVisibleState}>ON/OFF</button>
             {this.state.visible && 
                 <LifeCycleClassChild number={this.state.number} />
             }
