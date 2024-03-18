@@ -14,7 +14,7 @@ export default function Exall () {
         comment: "안녕하세요."
     })
     return (
-        <div>
+        <div className='ExAll'>
             <Select setData={setData}/>
             <Input setData={setData}/>
             <br/>

@@ -41,50 +41,50 @@ export default function Select ({setData}){
     return (
 
         <div className="SelectBox">
-        <div className='FruitSelect'>
-        <label>JS 과일</label>
-        <select className="Fruit" onChange={(e) => {setData((prevData)=> {return {...prevData, fruit: e.target.value}})}}>
-            {FRUITS.map((option) => (
-                <option value={option.value}>{option.name}</option>
-            ))}
-        </select>
-        <span>react-select 과일</span>
-         <Selects
-         onChange={(e) => {{setData((prevData)=> {return {...prevData, fruit: e.value}})}}}
-        defaultValue={options[0]}
-        options={options}>
-        </Selects>
-        </div>
-        <br />
-        <div className='BgSelect'>
-        <label>배경</label>
-        <select className="Background" onChange={(e) => {setData((prevData)=> {return {...prevData, backgroundColor: e.target.value}})}}>
-            {COLORS.map(option => (
-                <option value={option.value}>{option.name}</option>
-            ))}
-        </select>
-        <span>react-select 배경</span>
-         <Selects
-         onChange={(e) => {{setData((prevData)=> {return {...prevData, backgroundColor: e.value}})}}}
-        defaultValue={COLORSOptions[0]}
-        options={COLORSOptions}>
-        </Selects>
-        </div>
-        <br />
-        <div className='FontSelect'>
-        <label>글자 색</label>
-        <select className="FontColor" onChange={(e) => {setData((prevData) => {return {...prevData, color: e.target.value}})}}>
-            {COLORS.map(option => (
-                <option value={option.value}>{option.name}</option>
-            ))}
-        </select>
-        <span>react-select 글자 색</span>
-         <Selects
-         onChange={(e) => {{setData((prevData)=> {return {...prevData, backgroundColor: e.value}})}}}
-        defaultValue={COLORSOptions[0]}
-        options={COLORSOptions}>
-        </Selects>
-        </div>
+            <div className='FruitSelect'>
+            <label>JS 과일</label>
+            <select className="Fruit" onChange={(e) => {setData((prevData)=> {return {...prevData, fruit: e.target.value}})}}>
+                {FRUITS.map((option) => (
+                    <option value={option.value}>{option.name}</option>
+                ))}
+            </select>
+            <span>react-select 과일</span>
+            <Selects
+            onChange={(e) => {{setData((prevData)=> {return {...prevData, fruit: e.value}})}}}
+            defaultValue={options[0]}
+            options={options}>
+            </Selects>
+            </div>
+            <br />
+            <div className='BgSelect'>
+            <label>배경</label>
+            <select className="Background" onChange={(e) => {setData((prevData)=> {return {...prevData, backgroundColor: e.target.value}})}}>
+                {COLORS.map(option => (
+                    <option value={option.value}>{option.name}</option>
+                ))}
+            </select>
+            <span>react-select 배경</span>
+            <Selects
+            onChange={(e) => {{setData((prevData)=> {return {...prevData, backgroundColor: e.value}})}}}
+            defaultValue={COLORSOptions[0]}
+            options={COLORSOptions}>
+            </Selects>
+            </div>
+            <br />
+            <div className='FontSelect'>
+            <label>글자 색</label>
+            <select className="FontColor" onChange={(e) => {setData((prevData) => {return {...prevData, color: e.target.value}})}}>
+                {COLORS.map(option => (
+                    <option value={option.value}>{option.name}</option>
+                ))}
+            </select>
+            <span>react-select 글자 색</span>
+            <Selects
+            onChange={(e) => {{setData((prevData)=> {return {...prevData, backgroundColor: e.value}})}}}
+            defaultValue={COLORSOptions[0]}
+            options={COLORSOptions}>
+            </Selects>
+            </div>
         </div>
     )
 }
