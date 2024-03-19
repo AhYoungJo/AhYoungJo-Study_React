@@ -1,5 +1,4 @@
 import {useRef} from 'react';
-
 export default function RefSample5 () {
     const inputRef = useRef();
     const inputRef2 = useRef();
@@ -9,12 +8,10 @@ export default function RefSample5 () {
                 inputRef.current.focus();
                 return;
             }
-
             if(inputRef2.current.value.trim().length === 0) {
                 inputRef2.current.focus();
                 return;
             }
-            
         }
     }
     const handleFocus2 = () => {
@@ -22,7 +19,6 @@ export default function RefSample5 () {
         if(inputRef2.current.value.trim().length === 0) {inputRef2.current.focus()}
         
     }
-    
     return (
         <div className='RefSample5'>
             <input type='text' ref={inputRef} onKeyDown={(e)=> handleFocus(e)} placeholder='작성자'></input>
