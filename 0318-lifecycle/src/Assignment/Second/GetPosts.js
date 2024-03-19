@@ -21,6 +21,10 @@ export default function GetPosts() {
     ];
 
     useEffect(() => {
+        // getPosts 함수 만든 이유
+        // useEffect를 사용할 때는 비동기 작업을 함수로 래핑한 다음 useEffect 콜백에서 호출
+        // useEffect에서는 비동기 함수를 지원하지 않는다.
+        // const getPosts = async () => { const res = await axios get....}
         async function getPosts() {
             try {
                 const res = await axios.get('https://jsonplaceholder.typicode.com/posts');
