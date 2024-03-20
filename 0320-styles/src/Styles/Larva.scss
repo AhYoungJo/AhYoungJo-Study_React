@@ -1,0 +1,49 @@
+@import './larvaUtils';
+@import './larvaVariables';
+
+.larva {
+    position: relative;
+
+    .body {
+        @include body(100px);
+        
+        @each $n, $color in $larvColors {
+            &.#{$n} {
+                $position: map-get($map:$larvaPositions , $key: $n);
+                top: map-get($position, top);
+                left: map-get($position, left);
+                position: map-get($position, position);
+                border-radius: map-get($position, border-radius);
+                background-color: $color;
+                @if $n == 'body5'{
+                    z-index: 9;
+                }
+            }
+        }
+
+        .eye {
+            position: absolute;
+            bottom: 30px;
+            border-radius: 50%;
+        
+            &.eye-white {
+                @include eyePosition(50px, white);
+                z-index: 10;
+            }
+        
+            &.eye-black {
+                top: 30px;
+                @include eyePosition(20px, black);
+                z-index: 10;
+            }
+        }
+    };
+    
+    .grass {
+        position: absolute;
+        width: 260px;
+        height: 100px;
+        top: 249px;
+        left: 200px;
+    }
+}

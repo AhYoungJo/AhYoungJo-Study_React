@@ -1,0 +1,15 @@
+$larvColors: (
+    body1: rgb(0, 0, 166),
+    body2: rgb(36, 61, 206),
+    body3: rgb(52, 118, 231),
+    body4: rgb(47, 146, 233),
+    body5: rgb(140, 191, 253)
+);
+
+$larvaPositions: (
+  body1: (top: 100px, left: 100px, position: absolute, border-radius: 50%),
+  body2: (top: 150px, left: 160px, position: absolute, border-radius: 50%),
+  body3: (top: 190px, left: 200px, position: absolute, border-radius: 50%),
+  body4: (top: 240px, left: 220px, position: absolute, border-radius: 50%),
+  body5: (top: 280px, left: 280px, position: absolute, border-radius: 50%)
+);

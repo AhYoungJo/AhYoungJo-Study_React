@@ -1,0 +1,12 @@
+@mixin body($size) {
+    position: absolute;
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+}
+
+@mixin eyePosition($size, $bgColor) {
+    width: $size;
+    height: $size;
+    background-color: $bgColor;
+}
