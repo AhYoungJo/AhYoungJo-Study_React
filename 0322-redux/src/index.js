@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App2 from './Store/App2.js';
+import App from './App.js';
 import reportWebVitals from './reportWebVitals';
-
 
 import counterReducer from './Store/counterReducer';
 import {createStore} from 'redux';
 import {configureStore} from '@reduxjs/toolkit';
-import {composeWithDevTools} from '@reduxjs/toolkit/dist/devtoolsExtension'
+import { composeWithDevTools } from '@redux-devtools/extension';
 import {Provider} from 'react-redux';
 
 import rootReducer from './Store/index';
+
+import App3 from './Store/App3.js'
+import App4 from './Store/App4.js'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // store : 전역 상태 관리하는 공간
@@ -22,7 +25,9 @@ const store = configureStore({reducer: rootReducer}, composeWithDevTools());
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-     <App />
+     <App2 />
+     <App4 />
+     <App3 />
     </Provider>
   </React.StrictMode>
 );
