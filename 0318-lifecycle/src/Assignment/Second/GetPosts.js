@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import './Styles/GetPosts.scss'
 
 export default function GetPosts() {
     const [postList, setPostList] = useState([]); // 원본 포스트 리스트

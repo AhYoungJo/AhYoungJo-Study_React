@@ -37,6 +37,7 @@ const InputInfo = () => {
                     }
                 })}
                 />
+                
                 {/* <input type="text" placeholder='age'
                 {...register('age', {
                     required: '0이상의 숫자만 입력해주세요.',
